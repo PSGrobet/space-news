@@ -4,57 +4,106 @@ body {
     color:lightgrey;
     font-family: Sometype Mono;
     letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 #title {
     text-align: center;
+    padding: 1 rem;
 }
 #form {
     display: flex;
     justify-content: center;
+    padding: 1rem;
 }
 #searchForm {
-    display: block;
+    display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 600px;
 
 }
 #searchInput {
+    flex-grow: 1;
     border-radius: 5px;
-    border-style: hidden;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+    border: none;
+    padding: 10px;
     background-color: rgba(255,255,255,0.7);
+    margin-right: 10px;
 }
 #search-button {
-    padding: 0;
+    padding: 10px;
     border-radius: 10px;
-    border-style: hidden;
+    border: none;
     background-color: transparent;
     color: white;
-    margin-left: 2px;
     font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 #search-button:hover {
-    scale: 1.2;
+    transform: scale(1.2);
+}
+
+#data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
 }
 
 .news-card {
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
+    flex: 1 1 300px;
+    max-width: 600px;
+    margin: 1rem;
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
     background-color: rgba(0,0,0,0.2);
     padding: 1rem;
-    display: block;
-    max-width: 600px;
-
-    
+    display: flex;
+    flex-direction: column;    
 }
 .card-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 10px;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+h2 {
+    margin-top: 0;
+}
+.publish-date {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+a {
+    color: #4caf50;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-top: auto;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    #search-form {
+        flex-direction: column;
+    }
+    #search-input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #search-button {
+        width: 100%;
+    }
+    .news-card {
+        margin: 1rem;
+    }
+
 }
