@@ -1,0 +1,60 @@
+body {
+    background: rgb(14,5,193);
+    background: linear-gradient(90deg, rgb(28, 28, 75) 0%, rgb(36, 36, 36)  100%);
+    color:lightgrey;
+    font-family: Sometype Mono;
+    letter-spacing: 2px;
+}
+#title {
+    text-align: center;
+}
+#form {
+    display: flex;
+    justify-content: center;
+}
+#searchForm {
+    display: block;
+    align-items: center;
+
+}
+#searchInput {
+    border-radius: 5px;
+    border-style: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: rgba(255,255,255,0.7);
+}
+#search-button {
+    padding: 0;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: transparent;
+    color: white;
+    margin-left: 2px;
+    font-size: 1.1rem;
+}
+#search-button:hover {
+    scale: 1.2;
+}
+
+.news-card {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgba(0,0,0,0.2);
+    padding: 1rem;
+    display: block;
+    max-width: 600px;
+
+    
+}
+.card-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10px;
+}
