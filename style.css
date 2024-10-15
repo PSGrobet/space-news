@@ -11,7 +11,7 @@ body {
 }
 #title {
     text-align: center;
-    padding: 1 rem;
+    padding: 1rem;
 }
 #form {
     display: flex;
@@ -90,22 +90,23 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     body {
-        font-size: 1.2rem;
+        font-size: 1.2 rem;
+    }
+    #title {
+        font-size: 3em;
     }
     #search-form {
-        flex-direction: column;
+        align-items: center;
     }
     #search-input {
-        width: 100%;
         margin-right: 0;
         margin-bottom: 10px;
-        height: 2vh;
+        box-sizing: border-box;
     }
     #search-button {
-        width: 100%;
-        font-size: 2rem;
+        padding: 10px;
     }
     .news-card {
         margin: 1rem;
